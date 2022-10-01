@@ -17,7 +17,9 @@ public class MoveObject01 : MonoBehaviour
     void Update()
     {
         // My position equals my position PLUS 
-	    // where I want to be by the end of this frame...
-        transform.position = transform.position + Vector3.zero;
+        // where I want to be by the end of this frame...
+// When you solve the unit, write a comment in the code explaining what you did and why it worked.
+        //I added the moveDirection to the current position --> moveDirection is a serializable field, so when it is negative it will move to the left
+        transform.position = transform.position + moveDirection;
     }
 }
